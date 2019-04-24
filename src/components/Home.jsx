@@ -9,8 +9,11 @@ class Home extends Component {
         };
     }
     render() {
+        console.log(this.props);
         return (
-           <div style="width: 500px; height: 500px; border: 1px solid red">Hello</div>
+           <div>Hello
+           asdasdasd
+           </div>
         );
     }
 }

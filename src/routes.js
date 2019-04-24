@@ -1,17 +1,24 @@
-import React from 'react';
-import Home from './components/Home';
-import LoginForm from './components/LoginForm';
+
+import Directer from './components/Directer.jsx';
+import LoginForm from './components/LoginForm.jsx';
+import Home from './components/Home.jsx';
 
 const routes = [
     {
-        path : '/home',
-        exact : true,
-        main : () => <Home />
+        path: "/login",
+        component: LoginForm,
+        layout: "/auth"
     },
     {
-        path : '/loginform',
-        main : () => <LoginForm />
-    },
+        path: "/home",
+        component: Home,
+        layout: ""
+    },  
+    {
+        path: "/",
+        component: Directer,
+        layout: ""
+    },  
 ];
 
 export default routes;
